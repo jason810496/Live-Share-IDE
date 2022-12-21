@@ -1,0 +1,31 @@
+# client
+
+- setting & chating view
+    - chating login
+    - chat room
+    - account login 
+    - setting
+        - change editor theme
+        - change console theme
+        - font size
+        - font family
+
+- directory tree view
+    - clickable 
+    - visable
+    - expanable
+- editor space view
+    - tab scroller
+        - tag
+            - icon
+            - file name
+            - close btn
+            - high light
+    - editor 
+        - scroll view 
+        - row number
+        - syntax highlighting
+        - auto complete ? 
+- console view
+    - console
+    - console theme
