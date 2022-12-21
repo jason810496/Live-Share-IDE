@@ -2,13 +2,18 @@
 
 - setting & chating view
     - chating login
-    - chat room
     - account login 
     - setting
         - change editor theme
         - change console theme
         - font size
         - font family
+    - chat room
+        - avator
+        - message
+        - link
+        - text
+        - code
 
 - directory tree view
     - clickable 
