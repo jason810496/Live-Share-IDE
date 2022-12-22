@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'codeEditor.dart';
 
 class EditorView extends StatelessWidget {
   const EditorView({super.key});
@@ -13,6 +14,7 @@ class EditorView extends StatelessWidget {
             Container(
               color: Colors.red,
             ),
+            CodeEditor(),
           ],
         ),
       ),
