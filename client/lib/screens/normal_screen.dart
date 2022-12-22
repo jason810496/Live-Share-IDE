@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+// main screen
+import 'package:client/view/editor/editor.dart';
+import 'package:client/view/directory/directory.dart';
+import 'package:client/view/chat/chat.dart';
+
+import 'package:client/view/buttom_setting.dart';
 
 class NormalScreenLayout extends StatelessWidget {
   const NormalScreenLayout({super.key});
@@ -6,28 +12,19 @@ class NormalScreenLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Row(children: [
-        Container(
-          width: MediaQuery.of(context).size.width * 0.15,
-          color: Colors.red,
-        ),
-        Container(
-          width: MediaQuery.of(context).size.width * 0.65,
-          child: SingleChildScrollView(
-            child: Column(
-              children: [
-                Container(
-                  color: Colors.red,
-                ),
-              ],
-            ),
+      body: Column(
+        children: [
+          Expanded(
+            // main screen
+            child: Row(children: [
+              DirectoryTreeView(),
+              EditorView(),
+              ChatView(),
+            ]),
           ),
-        ),
-        Container(
-          width: MediaQuery.of(context).size.width * 0.2,
-          color: Colors.yellow,
-        )
-      ]),
+          ButtomSetting(),
+        ],
+      ),
     );
   }
 }
