@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'codeEditor.dart';
+import 'filesTab.dart';
 
 class EditorView extends StatelessWidget {
   const EditorView({super.key});
@@ -10,9 +11,11 @@ class EditorView extends StatelessWidget {
     return Container(
       alignment: Alignment.topCenter,
       width: MediaQuery.of(context).size.width * 0.65,
-      child: SingleChildScrollView(
-        child: CodeEditor(),
-      ),
+      child: Column(
+        children: [
+          FilesTab(),
+          CodeEditor(),
+      ],),
     );
   }
 }
