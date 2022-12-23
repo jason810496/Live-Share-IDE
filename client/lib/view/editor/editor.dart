@@ -6,17 +6,12 @@ class EditorView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     return Container(
+      alignment: Alignment.topCenter,
       width: MediaQuery.of(context).size.width * 0.65,
       child: SingleChildScrollView(
-        child: Column(
-          children: [
-            Container(
-              color: Colors.red,
-            ),
-            CodeEditor(),
-          ],
-        ),
+        child: CodeEditor(),
       ),
     );
   }

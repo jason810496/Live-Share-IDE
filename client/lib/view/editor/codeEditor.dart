@@ -4,6 +4,7 @@ import 'package:code_text_field/code_text_field.dart';
 import 'package:highlight/languages/dart.dart';
 import 'package:flutter_highlight/themes/monokai-sublime.dart';
 import 'package:flutter_highlight/themes/darcula.dart';
+import 'package:flutter_highlight/themes/atom-one-dark.dart';
 
 class CodeEditor extends StatefulWidget {
   @override
@@ -35,10 +36,12 @@ class _CodeEditorState extends State<CodeEditor> {
   Widget build(BuildContext context) {
     return CodeTheme(
       child: CodeField(
+        minLines: 25,
+        maxLines: 25,
         controller: _codeController!,
         textStyle: TextStyle(fontFamily: 'SourceCode'),
       ),
-      data: CodeThemeData(styles: darculaTheme),
+      data: const CodeThemeData(styles: atomOneDarkTheme),
     );
   }
 }
