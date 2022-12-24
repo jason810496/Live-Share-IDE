@@ -3,6 +3,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import 'package:client/colors.dart';
+
 class DirectorySelector extends StatefulWidget {
   @override
   _DirectorySelectorState createState() => _DirectorySelectorState();
@@ -53,27 +55,6 @@ class _DirectorySelectorState extends State<DirectorySelector> {
           _paths != null ? _paths!.map((e) => e.name).toString() : '...';
       _userAborted = _paths == null;
     });
-  }
-
-  void _clearCachedFiles() async {
-    _resetState();
-    try {
-      bool? result = await FilePicker.platform.clearTemporaryFiles();
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          backgroundColor: result! ? Colors.green : Colors.red,
-          content: Text((result
-              ? 'Temporary files removed with success.'
-              : 'Failed to clean temporary files')),
-        ),
-      );
-    } on PlatformException catch (e) {
-      _logException('Unsupported operation' + e.toString());
-    } catch (e) {
-      _logException(e.toString());
-    } finally {
-      setState(() => _isLoading = false);
-    }
   }
 
   void _selectFolder() async {
@@ -142,37 +123,25 @@ class _DirectorySelectorState extends State<DirectorySelector> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       scaffoldMessengerKey: _scaffoldMessengerKey,
+      theme: ThemeData.dark().copyWith(
+        backgroundColor: backgroundColor,
+      ),
       home: Scaffold(
         key: _scaffoldKey,
         appBar: AppBar(
-          title: const Text('File Picker example app'),
+          centerTitle: false,
+          title: const Text('Directory'),
+          toolbarHeight: MediaQuery.of(context).size.height * 0.05,
         ),
         body: Center(
           child: Padding(
             padding: const EdgeInsets.only(left: 10.0, right: 10.0),
             child: SingleChildScrollView(
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.only(top: 20.0),
-                    child: DropdownButton<FileType>(
-                        hint: const Text('LOAD PATH FROM'),
-                        value: _pickingType,
-                        items: FileType.values
-                            .map((fileType) => DropdownMenuItem<FileType>(
-                                  child: Text(fileType.toString()),
-                                  value: fileType,
-                                ))
-                            .toList(),
-                        onChanged: (value) => setState(() {
-                              _pickingType = value!;
-                              if (_pickingType != FileType.custom) {
-                                _controller.text = _extension = '';
-                              }
-                            })),
-                  ),
                   ConstrainedBox(
                     constraints: const BoxConstraints.tightFor(width: 100.0),
                     child: _pickingType == FileType.custom
@@ -188,40 +157,34 @@ class _DirectorySelectorState extends State<DirectorySelector> {
                           )
                         : const SizedBox(),
                   ),
-                  ConstrainedBox(
-                    constraints: const BoxConstraints.tightFor(width: 200.0),
-                    child: SwitchListTile.adaptive(
-                      title: Text(
-                        'Pick multiple files',
-                        textAlign: TextAlign.right,
-                      ),
-                      onChanged: (bool value) =>
-                          setState(() => _multiPick = value),
-                      value: _multiPick,
-                    ),
-                  ),
                   Padding(
                     padding: const EdgeInsets.only(top: 50.0, bottom: 20.0),
-                    child: Column(
+                    child: Row(
                       children: <Widget>[
-                        ElevatedButton(
+                        IconButton(
+                          icon: Icon(Icons.file_open,size: 20,),
                           onPressed: () => _pickFiles(),
-                          child: Text(_multiPick ? 'Pick files' : 'Pick file'),
+                          splashRadius: 15,
                         ),
-                        SizedBox(height: 10),
-                        ElevatedButton(
+                        IconButton(
+                          icon: Icon(Icons.folder_open,size: 20,),
                           onPressed: () => _selectFolder(),
-                          child: const Text('Pick folder'),
+                          splashRadius: 15,
                         ),
-                        SizedBox(height: 10),
-                        ElevatedButton(
+                        IconButton(
+                          icon: Icon(Icons.save,size: 20,),
                           onPressed: () => _saveFile(),
-                          child: const Text('Save file'),
+                          splashRadius: 15,
                         ),
-                        SizedBox(height: 10),
-                        ElevatedButton(
-                          onPressed: () => _clearCachedFiles(),
-                          child: const Text('Clear temporary files'),
+                        IconButton(
+                          icon: Icon(Icons.create_new_folder,size: 20,),
+                          onPressed: () => _saveFile(),
+                          splashRadius: 15,
+                        ),
+                        IconButton(
+                          icon: Icon(Icons.difference,size: 20,),
+                          onPressed: () => _saveFile(),
+                          splashRadius: 15,
                         ),
                       ],
                     ),
