@@ -1,17 +1,32 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutter/material.dart';
+
 // list all files
 import 'dart:io';
+// file diolog
+import 'directory_selector.dart';
 
 class DirectoryTreeView extends StatelessWidget {
   const DirectoryTreeView({super.key});
+
+  
 
   @override
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width * 0.15,
       color: Colors.red,
-      child: FutureText(),
+      // child: Column(
+      //   children: [
+      //     // DirectorySelector(),
+      //     ElevatedButton(onPressed: onPressed, child: child)
+      //     FutureText(),
+      //   ],
+      // ),
+
+      child: DirectorySelector(),
+      // child: FutureText(),
     );
   }
 }
