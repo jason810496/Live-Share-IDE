@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:code_text_field/code_text_field.dart';
 // Import the language & theme
-import 'package:highlight/languages/dart.dart';
+import 'package:highlight/languages/cpp.dart';
 import 'package:flutter_highlight/themes/monokai-sublime.dart';
 import 'package:flutter_highlight/themes/darcula.dart';
 import 'package:flutter_highlight/themes/atom-one-dark.dart';
@@ -17,11 +17,12 @@ class _CodeEditorState extends State<CodeEditor> {
   @override
   void initState() {
     super.initState();
-    final source = "void main() {\n    print(\"Hello, world!\");\n}";
+    final source =
+        "#include<iostream>\nusing namespace std;\nint main() {\n    cout<<\"Hello, world!\";\n}";
     // Instantiate the CodeController
     _codeController = CodeController(
       text: source,
-      language: dart,
+      language: cpp,
       // theme: monokaiSublimeTheme,
     );
   }
