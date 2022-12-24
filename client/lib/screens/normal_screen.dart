@@ -4,7 +4,7 @@ import 'package:client/view/editor/editor.dart';
 import 'package:client/view/directory/directory.dart';
 import 'package:client/view/chat/chat.dart';
 
-import 'package:client/view/buttom_setting.dart';
+import 'package:client/view/top_setting.dart';
 
 class NormalScreenLayout extends StatelessWidget {
   const NormalScreenLayout({super.key});
@@ -14,6 +14,7 @@ class NormalScreenLayout extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
+          TopSetting(),
           Expanded(
             // main screen
             child: Row(children: [
@@ -22,7 +23,6 @@ class NormalScreenLayout extends StatelessWidget {
               ChatView(),
             ]),
           ),
-          ButtomSetting(),
         ],
       ),
     );
