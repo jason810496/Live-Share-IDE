@@ -5,12 +5,12 @@ import 'package:flutter/services.dart';
 
 import 'package:client/colors.dart';
 
-class DirectorySelector extends StatefulWidget {
+class Selector extends StatefulWidget {
   @override
-  _DirectorySelectorState createState() => _DirectorySelectorState();
+  _SelectorState createState() => _SelectorState();
 }
 
-class _DirectorySelectorState extends State<DirectorySelector> {
+class _SelectorState extends State<Selector> {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   final _scaffoldMessengerKey = GlobalKey<ScaffoldMessengerState>();
   String? _fileName;

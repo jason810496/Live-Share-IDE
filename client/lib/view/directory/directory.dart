@@ -17,14 +17,6 @@ class DirectoryTreeView extends StatelessWidget {
     return Container(
       width: MediaQuery.of(context).size.width * 0.15,
       color: Colors.red,
-      // child: Column(
-        // children: [
-          // DirectorySelector(),
-          // ElevatedButton(onPressed: onPressed, child: child)
-          // FutureText(),
-        // ],
-      // ),
-
       child: DirectorySelector(),
       // child: FutureText(),
     );
