@@ -37,8 +37,8 @@ class _CodeEditorState extends State<CodeEditor> {
   Widget build(BuildContext context) {
     return CodeTheme(
       child: CodeField(
-        minLines: 25,
-        maxLines: 25,
+        minLines: 30,
+        maxLines: 30,
         controller: _codeController!,
         textStyle: TextStyle(fontFamily: 'SourceCode'),
       ),
