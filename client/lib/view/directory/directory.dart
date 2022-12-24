@@ -1,13 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:path_provider/path_provider.dart';
 
 // list all files
 import 'dart:io';
-
-Future<String> get _localPath async {
-  final directory = await getApplicationDocumentsDirectory();
-  return directory.path;
-}
 
 class DirectoryTreeView extends StatelessWidget {
   const DirectoryTreeView({super.key});
