@@ -38,6 +38,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   code_text_field: ^1.1.0
   file_picker: ^5.2.4
+  bloc: ^8.1.0
 
 dev_dependencies:
   flutter_test:
