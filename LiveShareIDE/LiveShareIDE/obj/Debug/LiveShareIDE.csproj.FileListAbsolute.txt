@@ -1,0 +1,37 @@
+C:\Users\jason\source\repos\LiveShareIDE\LiveShareIDE\bin\Debug\LiveShareIDE.exe.config
+C:\Users\jason\source\repos\LiveShareIDE\LiveShareIDE\bin\Debug\LiveShareIDE.exe
+C:\Users\jason\source\repos\LiveShareIDE\LiveShareIDE\bin\Debug\LiveShareIDE.pdb
+C:\Users\jason\source\repos\LiveShareIDE\LiveShareIDE\obj\Debug\LiveShareIDE.csprojAssemblyReference.cache
+C:\Users\jason\source\repos\LiveShareIDE\LiveShareIDE\obj\Debug\LiveShareIDE.Form1.resources
+C:\Users\jason\source\repos\LiveShareIDE\LiveShareIDE\obj\Debug\LiveShareIDE.Properties.Resources.resources
+C:\Users\jason\source\repos\LiveShareIDE\LiveShareIDE\obj\Debug\LiveShareIDE.csproj.GenerateResource.cache
+C:\Users\jason\source\repos\LiveShareIDE\LiveShareIDE\obj\Debug\LiveShareIDE.csproj.CoreCompileInputs.cache
+C:\Users\jason\source\repos\LiveShareIDE\LiveShareIDE\obj\Debug\LiveShareIDE.exe
+C:\Users\jason\source\repos\LiveShareIDE\LiveShareIDE\obj\Debug\LiveShareIDE.pdb
+C:\Users\jason\source\repos\LiveShareIDE\LiveShareIDE\bin\Debug\FastColoredTextBox.dll
+C:\Users\jason\source\repos\LiveShareIDE\LiveShareIDE\bin\Debug\FastColoredTextBox.xml
+C:\Users\jason\source\repos\LiveShareIDE\LiveShareIDE\obj\Debug\LiveShareIDE.csproj.CopyComplete
+C:\Users\jason\source\repos\LiveShareIDE\LiveShareIDE\bin\Debug\MaterialSkin.dll
+C:\Users\jason\source\repos\LiveShareIDE\LiveShareIDE\bin\Debug\ConsoleControl.dll
+C:\Users\jason\source\repos\LiveShareIDE\LiveShareIDE\bin\Debug\ConsoleControlAPI.dll
+C:\Users\jason\source\repos\LiveShareIDE\LiveShareIDE\bin\Debug\ConsoleControl.xml
+C:\Users\jason\source\repos\LiveShareIDE\LiveShareIDE\bin\Debug\ConsoleControlAPI.xml
+C:\Users\User\Downloads\LiveShareIDE (1)\LiveShareIDE\LiveShareIDE\obj\Debug\LiveShareIDE.csprojAssemblyReference.cache
+C:\Users\User\Downloads\LiveShareIDE (1)\LiveShareIDE\LiveShareIDE\obj\Debug\LiveShareIDE.exe
+C:\Users\User\Downloads\LiveShareIDE (1)\LiveShareIDE\LiveShareIDE\obj\Debug\LiveShareIDE.pdb
+C:\Users\User\Downloads\LiveShareIDE (1)\LiveShareIDE\LiveShareIDE\bin\Debug\LiveShareIDE.exe.config
+C:\Users\User\Downloads\LiveShareIDE (1)\LiveShareIDE\LiveShareIDE\bin\Debug\LiveShareIDE.exe
+C:\Users\User\Downloads\LiveShareIDE (1)\LiveShareIDE\LiveShareIDE\bin\Debug\LiveShareIDE.pdb
+C:\Users\User\Downloads\LiveShareIDE (1)\LiveShareIDE\LiveShareIDE\bin\Debug\ConsoleControl.dll
+C:\Users\User\Downloads\LiveShareIDE (1)\LiveShareIDE\LiveShareIDE\bin\Debug\ConsoleControlAPI.dll
+C:\Users\User\Downloads\LiveShareIDE (1)\LiveShareIDE\LiveShareIDE\bin\Debug\FastColoredTextBox.dll
+C:\Users\User\Downloads\LiveShareIDE (1)\LiveShareIDE\LiveShareIDE\bin\Debug\MaterialSkin.dll
+C:\Users\User\Downloads\LiveShareIDE (1)\LiveShareIDE\LiveShareIDE\bin\Debug\ConsoleControl.xml
+C:\Users\User\Downloads\LiveShareIDE (1)\LiveShareIDE\LiveShareIDE\bin\Debug\ConsoleControlAPI.xml
+C:\Users\User\Downloads\LiveShareIDE (1)\LiveShareIDE\LiveShareIDE\bin\Debug\FastColoredTextBox.xml
+C:\Users\User\Downloads\LiveShareIDE (1)\LiveShareIDE\LiveShareIDE\obj\Debug\LiveShareIDE.Form1.resources
+C:\Users\User\Downloads\LiveShareIDE (1)\LiveShareIDE\LiveShareIDE\obj\Debug\LiveShareIDE.Properties.Resources.resources
+C:\Users\User\Downloads\LiveShareIDE (1)\LiveShareIDE\LiveShareIDE\obj\Debug\LiveShareIDE.csproj.GenerateResource.cache
+C:\Users\User\Downloads\LiveShareIDE (1)\LiveShareIDE\LiveShareIDE\obj\Debug\LiveShareIDE.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\LiveShareIDE (1)\LiveShareIDE\LiveShareIDE\obj\Debug\LiveShareIDE.csproj.CopyComplete
+C:\Users\User\Downloads\LiveShareIDE (1)\LiveShareIDE\LiveShareIDE\obj\Debug\LiveShareIDE.myMessage.resources
