@@ -17,6 +17,12 @@ More : testing multi-room & multi client mechanism
 **server**
 - `python` 3.9 up
 
+## How to use ? 
+
+1. run python sokcet server ( `server.py` )
+2. open `LiveShareIDE.exe` and enjoy ! ✨
+
+
 ## Feature 
 **Python Socket Server :**
 - multi client
