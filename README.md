@@ -1,15 +1,8 @@
 # Live-Share-IDE
-A Live-Share IDE written in `Flutter` . With directory tree , syntax high-lighting , chat room ... etc
+A Live-Share IDE written in `C#` . With directory tree , syntax high-lighting , chat room , intergerated console ... etc
 
-## Client 
+I use `python` socket as demo server for chat room mechanism. ( in [`python_latest`](https://github.com/jason810496/Live-Share-IDE/tree/server/python_latest) directory )
 
-[Client branch](https://github.com/jason810496/Live-Share-IDE/tree/client)
+## Concept 
 
-## Server 
-
-[Server branch](https://github.com/jason810496/Live-Share-IDE/tree/server)
-
-## Socket
-
-multi-client socket server & client side written in cpp / python3 to test socket IO .
-[Socket branch](https://github.com/jason810496/Live-Share-IDE/tree/socket)
+![LiveShareIDE socket](https://user-images.githubusercontent.com/68415893/211127504-dbfc5489-7302-4324-806e-b59ef216999b.jpg)
